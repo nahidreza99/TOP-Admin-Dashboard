@@ -147,20 +147,19 @@ header .hero>span:last-child{
     border-radius: 10px;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     display: grid;
-    justify-content: space-around;
 }
 
 #projects .project-item .title{
     font-size: 1rem;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 #projects .project-item .body{
     font-size: 0.8rem;
     color: gray;
-    max-height: 90px;
+    max-height: 115px;
     overflow: hidden;
-    justify-self: flex-start;
 }
 
 #projects .project-item .btn-group{
@@ -168,15 +167,14 @@ header .hero>span:last-child{
     display: grid;
     justify-content: flex-end;
     grid-template-columns: auto auto auto;
+    padding: 20px 0 0 0;
+    justify-self: flex-end;
 }
 
 #projects .project-item .btn-group>*{
     padding: 0 5px;
 }
 
-#projects .project-item>*{
-    margin: 20px 0;
-}
 
 #announcements{
     grid-column-start: 2;
@@ -205,4 +203,12 @@ header .hero>span:last-child{
     color: gray;
     font-size: 0.7rem;
     word-spacing: 80%;
+}
+
+#announcements .item{
+    padding: 10px;
+}
+
+#announcements>div:nth-of-type(1), #announcements>div:nth-of-type(2){
+    border-bottom: 1px solid gray;
 }
